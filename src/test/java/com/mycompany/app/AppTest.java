@@ -1,6 +1,6 @@
 package com.mycompany.app;
 
-import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.*;
 
 import org.junit.Test;
 
@@ -15,7 +15,7 @@ public class AppTest
     @Test
     public void shouldAnswerWithTrue()
     {
-        App app = new App();
+        assertEquals("Hello, Jagadesh", App.sayHello("Jagadesh"));
         assertTrue( true );
     }
 }
