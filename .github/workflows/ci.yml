@@ -28,5 +28,20 @@ jobs:
           SLACK_WEBHOOK: ${{secrets.SLACK_WEBHOOK}}
           REPORT_NOTIFY: "slack#do_not_use_channel"
           SLACK_TITLE: Auto CI trigger - ${{ github.event_name }} in ${{ github.repository }} ${{ github.ref }} <${{ github.server_url }}/${{ github.repository }}/commit/${{ github.sha }}|${{ github.sha }}> by ${{ github.actor}}
-          
-
+       
+  release:
+  if: "!contains(github.event.head_commit.message, 'skip ci')"
+  runs-on: ubuntu-latest
+  steps:
+    - name: setup node
+      uses: actions/setup-node@v1
+      with:
+        node-version: 12
+      env:
+        GITHUB_TOKEN: ${{ secrets.PERSONAL_GITHUB_TOKEN }}
+    - name: setup semantic-release
+      run: npm install -g semantic-release @semantic-release/changelog @semantic-release/commit-analyzer @semantic-release/exec semantic-release/git semantic-release/release-notes-generator
+    - name: release
+      env:
+        GITHUB_TOKEN: ${{ secrets.PERSONAL_GITHUB_TOKEN }}
+      run: chmod +x ./prepare-release.sh && npx semantic-release
