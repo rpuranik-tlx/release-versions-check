@@ -1,0 +1,32 @@
+name: tlx-api CI flow
+
+on:
+  push:
+    branches: 
+      - 'main'
+      - 'develop'
+  pull_request:
+    branches:
+      - 'main'
+      - 'develop'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v1
+    - id: tlx--api-ci
+      name: Tlx Continuous Integration
+      uses: jmunta-tlx/tlx-cicd@v3
+      with:
+        project-name: 'my-app'
+        project-type: 'mvn'
+        project-artifact: target/my-app-1.0-SNAPSHOT.jar
+        project-steps: all
+      env:
+          SLACK_WEBHOOK: ${{secrets.SLACK_WEBHOOK}}
+          REPORT_NOTIFY: "slack#do_not_use_channel"
+          SLACK_TITLE: Auto CI trigger - ${{ github.event_name }} in ${{ github.repository }} ${{ github.ref }} <${{ github.server_url }}/${{ github.repository }}/commit/${{ github.sha }}|${{ github.sha }}> by ${{ github.actor}}
+          
+
