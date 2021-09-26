@@ -1,0 +1,5 @@
+{
+  "name": "my-app",
+  "description": "Automated semver compliant package publishing",
+  "version": "1.0.0"
+}
