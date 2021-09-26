@@ -1,4 +1,4 @@
-name: tlx-api CI flow
+name: my-app CI flow
 
 on:
   push:
@@ -16,7 +16,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v1
-    - id: tlx--api-ci
+    - id: my-app-ci
       name: Tlx Continuous Integration
       uses: jmunta-tlx/tlx-cicd@v3
       with:
