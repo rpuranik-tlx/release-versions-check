@@ -1,5 +1,9 @@
 {
-  "release": {
-    "branches": ["main", "master", "develop"]
-  }
+  "ci": true,
+  "branches": ["main", "master", "develop"],
+  "plugins": [
+    ["@semantic-release/npm", {
+      "npmPublish": false,
+    }],
+  ]
 }
