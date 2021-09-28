@@ -12,7 +12,7 @@ public class App
     }
 
     public static String sayHello(String name) {
-        return "Hello, " + name;
+        return "Saying Hello to " + name;
     }
 
     public static String sayHello2(String name) {
