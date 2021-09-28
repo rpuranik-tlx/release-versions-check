@@ -16,7 +16,7 @@ public class App
     }
 
     public static String sayHello2(String name) {
-        return "Hello World, " + name;
+        return "Hello World2, " + name;
     }
 
     public static String sayHelloAI(String name) {
