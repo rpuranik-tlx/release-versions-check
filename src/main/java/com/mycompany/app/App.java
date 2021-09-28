@@ -20,6 +20,6 @@ public class App
     }
 
     public static String sayHelloAI(String name) {
-        return "Hello AI, " + name;
+        return "Saying Hello AI, " + name;
     }
 }
