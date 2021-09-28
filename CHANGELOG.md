@@ -1,3 +1,19 @@
+# Semantic Versioning Changelog
+
+## [1.1.1](https://github.com/jmunta-tlx/release-versions-check/compare/v1.1.0...v1.1.1) (2021-09-28)
+
+
+### Bug Fixes
+
+* changed the api method [#6](https://github.com/jmunta-tlx/release-versions-check/issues/6) ([2cd3313](https://github.com/jmunta-tlx/release-versions-check/commit/2cd331308ba05b9f1337a18b48f94fb523e8a1bd))
+
+## [1.1.1](https://github.com/jmunta-tlx/release-versions-check/compare/v1.1.0...v1.1.1) (2021-09-28)
+
+
+### Bug Fixes
+
+* changed the api method [#6](https://github.com/jmunta-tlx/release-versions-check/issues/6) ([2cd3313](https://github.com/jmunta-tlx/release-versions-check/commit/2cd331308ba05b9f1337a18b48f94fb523e8a1bd))
+
 ## v1.1.0 (2021-09-27)
 
 
