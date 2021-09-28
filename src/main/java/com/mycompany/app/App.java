@@ -18,4 +18,8 @@ public class App
     public static String sayHello2(String name) {
         return "Hello World, " + name;
     }
+
+    public static String sayHelloAI(String name) {
+        return "Hello AI, " + name;
+    }
 }

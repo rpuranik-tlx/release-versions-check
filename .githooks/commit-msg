@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # regex for a conventional commit
-regex="^(build|chore|ci|docs|feat|fix|perf|refactor|revert|style|test)(\([a-z \-]+\))?!?: .+$"
+regex="^(build|chore|ci|docs|BREAKING CHANGE|feat|fix|perf|refactor|revert|style|test)(\([a-z \-]+\))?!?: .+$"
 
 # get the commit message
 commit_message=$(cat "$1")
