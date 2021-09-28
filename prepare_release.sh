@@ -16,3 +16,4 @@ mvn package
 mkdir release && cp target/*.jar release
 
 printenv
+
