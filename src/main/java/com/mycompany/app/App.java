@@ -14,4 +14,8 @@ public class App
     public static String sayHello(String name) {
         return "Hello, " + name;
     }
+
+    public static String sayHello2(String name) {
+        return "Hello2, " + name;
+    }
 }
