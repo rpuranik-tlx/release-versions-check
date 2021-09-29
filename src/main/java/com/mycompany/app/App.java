@@ -22,4 +22,8 @@ public class App
     public static String sayHelloAI(String name) {
         return "Saying Hello AI, " + name;
     }
+
+    public static String sayHelloAI2(String name) {
+        return "Saying Hello AI2, " + name;
+    }
 }
