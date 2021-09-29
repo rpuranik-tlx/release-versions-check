@@ -34,9 +34,14 @@ jobs:
         node-version: 14
       env:
         GITHUB_TOKEN: ${{ secrets.PERSONAL_GITHUB_TOKEN }}
+    - name: Login to Amazon ECR
+      id: login-ecr
+      uses: aws-actions/amazon-ecr-login@v1
     - name: setup semantic-release
       run: npm install -g semantic-release @semantic-release/changelog @semantic-release/commit-analyzer @semantic-release/exec semantic-release/git semantic-release/release-notes-generator
     - name: release
       env:
         GITHUB_TOKEN: ${{ secrets.PERSONAL_GITHUB_TOKEN }}
+        ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
+        ECR_REPOSITORY: tlx-engine/apiserver
       run: chmod +x ./prepare-release.sh && npx semantic-release
