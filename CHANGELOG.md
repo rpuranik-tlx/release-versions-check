@@ -1,5 +1,12 @@
 # Semantic Versioning Changelog
 
+# [2.2.0](https://github.com/jmunta-tlx/release-versions-check/compare/v2.1.0...v2.2.0) (2021-09-29)
+
+
+### Features
+
+* added new api ([7863ae8](https://github.com/jmunta-tlx/release-versions-check/commit/7863ae8121780bc7b1f68a964d058d3a17ca72e8))
+
 # [2.1.0](https://github.com/jmunta-tlx/release-versions-check/compare/v2.0.0...v2.1.0) (2021-09-28)
 
 
