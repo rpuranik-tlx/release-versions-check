@@ -12,6 +12,7 @@ on:
 
 jobs:
   ci:
+    if: github.ref == 'refs/heads/develop' && github.event.pull_request.merged == true
     runs-on: ubuntu-latest
 
     steps:
