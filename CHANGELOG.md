@@ -1,5 +1,12 @@
 # Semantic Versioning Changelog
 
+# [2.3.0](https://github.com/jmunta-tlx/release-versions-check/compare/v2.2.0...v2.3.0) (2021-09-30)
+
+
+### Features
+
+* Adding new feature after sprint 10  [#22](https://github.com/jmunta-tlx/release-versions-check/issues/22) ([34f537e](https://github.com/jmunta-tlx/release-versions-check/commit/34f537e2b0e886db1974a05189930788bb799185))
+
 # [2.2.0](https://github.com/jmunta-tlx/release-versions-check/compare/v2.1.0...v2.2.0) (2021-09-29)
 
 
